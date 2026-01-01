@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/btn'
 import {useState} from 'react'
 import { CirclePlus,CircleMinus } from 'lucide-react';
+import toast, {Toaster} from 'react-hot-toast';
 
 function VegitableCard({id,name,price,image,description,unit,category}) {
     const [quality,setQuality]=useState(1);
@@ -15,13 +16,24 @@ function VegitableCard({id,name,price,image,description,unit,category}) {
         <p>Category: {category}</p>
         <img src={image} alt={name} className='w-60 h-50 object-cover'/>
 
-        <div className='flex mt-4 px-4'>
-            <CirclePlus className='cursetr'/>
-            <label>Quantity: {quality}</label>
-            <CircleMinus />
+        <div className='flex mt-4 px-4 items-center justify-center text-2xl font-bold '>
+
+          <CircleMinus className='cursor-pointer m-2 ' onClick={() => {
+             if(quality > 1) {
+               setQuality(quality - 1) } else{
+                  toast.error("Quantity cannot be less than 1")
+               }
+               }}/>
+
+            <label>{quality}</label>
+
+            <CirclePlus className='cursor-pointer m-2  ' onClick={() => setQuality(quality + 1)}/>
+            
         </div>
 
         <Button title="Add to Cart" variant="primary" size="small" />
+
+       <Toaster />
     </div>
   )
 }
