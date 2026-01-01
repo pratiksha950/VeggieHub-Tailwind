@@ -32,24 +32,24 @@ function Home() {
       <Navbar />
 
       <div className=" bg-green-200">
-        <div className='flex items-center'>
-        <img src={imgMainHeader} alt="Main Header" className="h-[500px] w-auto object-contain"/>
+        <div className='flex flex-col md:flex-row items-center '>
+        <img src={imgMainHeader} alt="Main Header" className="h-[200px] md:h-[500px] w-auto object-contain"/>
         <div>
-        <h1 className="pt-0 text-6xl! font-normal! text-green-900">
+        <h1 className="pt-0 text-3xl! md:text-6xl! font-normal! text-green-900">
           From farm to your doorstep,
           we deliver freshness you can trust.
         </h1>
         </div>
     </div>
 
-    <h1 className="pt-0 text-4xl! font-bold! text-black-900 pb-8 text-center">
+    <h1 className="pt-0 text-2xl! md:text-4xl! font-bold! text-black-900 pb-8 text-center">
       Taaza sabzi har din,
       healthy zindagi ke liye.
     </h1>
 
       </div>
 
-  <div className="flex justify-around bg-green-200 py-8 gap-9">
+  <div className="flex justify-around bg-green-200 py-8 gap-9 flex-col md:flex-row">
     {FEATURES_CONFIG.map((feature) => {
   const { title, description, img } = feature;
 
