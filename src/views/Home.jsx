@@ -2,36 +2,17 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../index.css'
+import FeatureSection from '../components/FeatureSection'
 import imgMainHeader from '../assets/main-header.png'
-import IconFresh from '../assets/fresh.png'
-import IconQuality from '../assets/high-quality.png'
-import IconSatisfaction from '../assets/satisfaction.png'
-import FeatureCard from '../components/FeatureCard'
+import Button from '../components/btn.jsx'
 
-const FEATURES_CONFIG=[
-  {
-    title:"Freshness Guaranteed",
-    description:"We source our vegetables directly from trusted local farms to ensure the highest quality and freshness.",
-    img:IconFresh
-  },
-  {
-    title:"Quality Assurance",
-    description:"Our vegetables are carefully selected and inspected to meet the highest quality standards.",
-     img:IconQuality
-  },
-  {
-    title:"Customer Satisfaction",
-    description:"We are committed to providing excellent customer service and ensuring your satisfaction with every order.",
-     img:IconSatisfaction
-  },
-]
+
 
 function Home() {
   return (
     <div>
       <Navbar />
-
-      <div className=" bg-green-200">
+                <div className=" bg-green-200">
         <div className='flex flex-col md:flex-row items-center '>
         <img src={imgMainHeader} alt="Main Header" className="h-[200px] md:h-[500px] w-auto object-contain"/>
         <div>
@@ -39,6 +20,8 @@ function Home() {
           From farm to your doorstep,
           we deliver freshness you can trust.
         </h1>
+        <Button title="order now" variant="secondary" size='medium'/>
+        
         </div>
     </div>
 
@@ -47,22 +30,10 @@ function Home() {
       healthy zindagi ke liye.
     </h1>
 
+     <FeatureSection />
+
       </div>
 
-  <div className="flex justify-around bg-green-200 py-8 gap-9 flex-col md:flex-row">
-    {FEATURES_CONFIG.map((feature) => {
-  const { title, description, img } = feature;
-
-  return (
-    <>
-      <FeatureCard title={title} description={description} img={img} />
-    </>
-  );
-})}
-
-    
-  
-    </div>      
       <Footer />
     </div>
   )
