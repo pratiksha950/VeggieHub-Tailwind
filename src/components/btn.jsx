@@ -8,9 +8,9 @@ const buttton_Varients={
 }
 
 const button_sizes={
-    small:"text-sm text-xl",
-    medium:"text-md text-2xl",
-    large:"text-lg text-3xl"
+    small:"text-sm ",
+    medium:"text-md text-md",
+    large:"text-lg text-1xl"
 }
 
 function btn({ title, variant = "primary" , onClick={}, size="medium" }) {

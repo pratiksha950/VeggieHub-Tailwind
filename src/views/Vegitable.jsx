@@ -8,7 +8,7 @@ function Vegitable() {
   return (
     <div>
       <Navbar />
-      Vegitable
+     
 
       <div className='flex items-center justify-center flex-wrap gap-4 '>
         {vegitable_data.map((item) => {
