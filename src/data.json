@@ -1,0 +1,211 @@
+[
+    {
+        "id": 1,
+        "name": "Carrot",
+        "price": 20,
+        "image": "https://picsum.photos/seed/pic/200/300",
+        "description": "Fresh and crunchy carrots, perfect for salads and cooking.",
+        "unit": "per kg",
+        "category": "root vegetable"
+        
+    },
+    {
+        "id": 2,
+        "name": "Broccoli",
+        "price": 30,
+        "image": "https://picsum.photos/seed/picsgum/200/300",
+        "description": "Fresh and tender broccoli, great for steaming and stir-frying.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 3,
+        "name": "Spinach",
+        "price": 15,
+        "image": "https://picsum.photos/seed/picsum/200/300",
+        "description": "Fresh spinach leaves, rich in nutrients and perfect for salads.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 4,
+        "name": "Potato",
+        "price": 10,
+        "image": "https://picsum.photos/seed/picssum/200/300",
+        "description": "Versatile potatoes, ideal for baking, boiling, and frying.",
+        "unit": "per kg",
+        "category": "root vegetable"
+    },
+    {
+        "id": 5,
+        "name": "Tomato",
+        "price": 25,
+        "image": "https://picsum.photos/seed/picssums/200/300",
+        "description": "Juicy and ripe tomatoes, perfect for salads and cooking.",
+        "unit": "per kg",
+        "category": "fruit vegetable"
+    }   ,
+    {
+        "id": 6,
+        "name": "Cucumber",
+        "price": 18,
+        "image": "https://picsum.photos/seed/picssumss/200/300",
+        "description": "Crisp and refreshing cucumbers, great for salads and snacks.",
+        "unit": "per kg",
+        "category": "fruit vegetable"
+    },
+    {
+        "id": 7,
+        "name": "Cauliflower",
+        "price": 28,
+        "image": "https://picsum.photos/seed/picssumsss/200/300",
+        "description": "Fresh cauliflower heads, perfect for roasting and steaming.",
+        "unit": "per kg",
+        "category": "cruciferous vegetable"
+    },
+    {
+        "id": 8,
+        "name": "Bell Pepper",
+        "price": 22,
+        "image": "https://picsum.photos/seed/picssumssss/200/300",
+        "description": "Colorful bell peppers, great for salads and stir-fries.",
+        "unit": "per kg",
+        "category": "fruit vegetable"
+    },
+
+    {
+        "id": 9,
+        "name": "Lettuce",
+        "price": 12,
+        "image": "https://picsum.photos/seed/picssumsssss/200/300",
+        "description": "Fresh and crisp lettuce leaves, perfect for salads and sandwiches.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 10,
+        "name": "Zucchini",
+        "price": 16,
+        "image": "https://picsum.photos/seed/picssumssssss/200/300",
+        "description": "Tender and versatile zucchini, great for grilling and sautéing.",
+        "unit": "per kg",
+        "category": "summer squash"
+    },  
+    {
+        "id": 11,
+        "name": "Eggplant",
+        "price": 24,
+        "image": "https://picsum.photos/seed/picssumsssssss/200/300",
+        "description": "Rich and creamy eggplants, perfect for roasting and grilling.",
+        "unit": "per kg",
+        "category": "nightshade vegetable"
+    },
+    {
+        "id": 12,
+        "name": "Green Beans",
+        "price": 14,
+        "image": "https://picsum.photos/seed/picssumssssssss/200/300",
+        "description": "Fresh and crunchy green beans, great for steaming and stir-frying.",
+        "unit": "per kg",
+        "category": "legume"
+    },
+    {
+        "id": 13,
+        "name": "Asparagus",
+        "price": 35,
+        "image": "https://picsum.photos/seed/picssumsssssssss/200/300",
+        "description": "Tender and flavorful asparagus spears, perfect for grilling and roasting.",
+        "unit": "per kg",
+        "category": "spring vegetable"
+    },
+    {
+        "id": 14,
+        "name": "Cabbage",
+        "price": 19,
+        "image": "https://picsum.photos/seed/picssumssssssssss/200/300",
+        "description": "Crunchy and versatile cabbage, great for salads and stir-fries.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 15,
+        "name": "Radish",
+        "price": 13,
+        "image": "https://picsum.photos/seed/picssumsssssssssss/200/300",
+        "description": "Spicy and crunchy radishes, perfect for salads and garnishes.",
+        "unit": "per kg",
+        "category": "root vegetable"
+    },
+    {
+        "id": 16,
+        "name": "Celery",
+        "price": 17,
+        "image": "https://picsum.photos/seed/picssumssssssssssss/200/300",
+        "description": "Crisp and refreshing celery stalks, great for snacking and cooking.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 17,
+        "name": "Brussels Sprouts",
+        "price": 27,
+        "image": "https://picsum.photos/seed/picssumsssssssssssss/200/300",
+        "description": "Nutty and flavorful Brussels sprouts, perfect for roasting and sautéing.",
+        "unit": "per kg",
+        "category": "cruciferous vegetable"
+    },
+    {
+        "id": 18,
+        "name": "Kale",
+        "price": 21,
+        "image": "https://picsum.photos/seed/picssumssssssssssssss/200/300",
+        "description": "Nutrient-rich kale leaves, great for salads and smoothies.",
+        "unit": "per kg",
+        "category": "leafy vegetable"
+    },
+    {
+        "id": 19,
+        "name": "Mushrooms",
+        "price": 29,
+        "image": "https://picsum.photos/seed/picssumsssssssssssssss/200/300",
+        "description": "Fresh and earthy mushrooms, perfect for sautés and soups.",
+        "unit": "per kg",
+        "category": "fungi"
+    },
+    {
+        "id": 20,
+        "name": "Onion",
+        "price": 11,
+        "image": "https://picsum.photos/seed/picssumssssssssssssssss/200/300",
+        "description": "Flavorful onions, essential for cooking and seasoning.",
+        "unit": "per kg",
+        "category": "bulb vegetable"
+    },
+    {
+        "id": 21,
+        "name": "Garlic",
+        "price": 23,
+        "image": "https://picsum.photos/seed/picssumsssssssssssssssss/200/300",
+        "description": "Aromatic garlic cloves, perfect for adding flavor to dishes.",
+        "unit": "per kg",
+        "category": "bulb vegetable"
+    },
+    {
+        "id": 22,
+        "name": "Sweet Potato",
+        "price": 26,
+        "image": "https://picsum.photos/seed/picssumssssssssssssssssss/200/300",
+        "description": "Sweet and nutritious sweet potatoes, great for baking and roasting.",
+        "unit": "per kg",
+        "category": "root vegetable"
+    },
+    {
+        "id": 23,
+        "name": "Pumpkin",
+        "price": 32,
+        "image": "https://picsum.photos/seed/picssumsssssssssssssssssss/200/300",
+        "description": "Versatile pumpkins, perfect for soups, pies, and roasting.",
+        "unit": "per kg",
+        "category": "squash"
+    }
+]

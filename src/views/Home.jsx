@@ -5,10 +5,13 @@ import '../index.css'
 import FeatureSection from '../components/FeatureSection'
 import imgMainHeader from '../assets/main-header.png'
 import Button from '../components/btn.jsx'
+import { useNavigate } from 'react-router'
 
 
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Navbar />
@@ -20,7 +23,11 @@ function Home() {
           From farm to your doorstep,
           we deliver freshness you can trust.
         </h1>
-        <Button title="order now" variant="secondary" size='medium'/>
+
+        <div className='flex gap-4 flex-row mt-6 items-center justify-center'>
+          <Button title="Call Us" variant="secondary" size='medium'/>
+        <Button title="Explore Now" onClick={() => navigate("/Vegitable")} variant="primary" size='small'/>
+        </div>
         
         </div>
     </div>
