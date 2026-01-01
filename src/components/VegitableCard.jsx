@@ -4,8 +4,11 @@ import {useState} from 'react'
 import { CirclePlus,CircleMinus } from 'lucide-react';
 import toast, {Toaster} from 'react-hot-toast';
 
-function VegitableCard({id,name,price,image,description,unit,category}) {
-    const [quality,setQuality]=useState(1);
+ 
+
+function VegitableCard({id,name,price,image,description,unit,category,addToCart}) {
+  const [quantity,setQuantity]=useState(1);
+   
 
   return (
     <div className='border p-4 rounded-lg shadow-lg w-80 flex flex-col items-center justify-center border-green-500 bg-green-300 m-4 h-auto'>
@@ -19,19 +22,19 @@ function VegitableCard({id,name,price,image,description,unit,category}) {
         <div className='flex mt-4 px-4 items-center justify-center text-2xl font-bold '>
 
           <CircleMinus className='cursor-pointer m-2 ' onClick={() => {
-             if(quality > 1) {
-               setQuality(quality - 1) } else{
+             if(quantity > 1) {
+               setQuantity(quantity - 1) } else{
                   toast.error("Quantity cannot be less than 1")
                }
                }}/>
 
-            <label>{quality}</label>
+            <label>{quantity}</label>
 
-            <CirclePlus className='cursor-pointer m-2  ' onClick={() => setQuality(quality + 1)}/>
+            <CirclePlus className='cursor-pointer m-2  ' onClick={() => setQuantity(quantity + 1)}/>
             
         </div>
 
-        <Button title="Add to Cart" variant="primary" size="small" />
+        <Button title="Add to Cart" variant="primary" size="small" onClick={() => addToCart({id, name, price, unit, quantity, totalAmount: price * quantity})}/>
 
        <Toaster />
     </div>
