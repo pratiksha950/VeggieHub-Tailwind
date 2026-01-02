@@ -3,6 +3,7 @@ import { BrowserRouter,Routes,Route } from "react-router";
 import {createRoot} from "react-dom/client"
 import Home from './views/Home';
 import Vegitable from './views/Vegitable';
+import MyCart from './views/MyCart';
 
 const root=createRoot(document.getElementById('root'));
 
@@ -12,6 +13,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Vegitable" element={<Vegitable />} />
+        <Route path="/MyCart" element={<MyCart />} />
       </Routes>
     </BrowserRouter>
   </>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import {Salad,ShoppingCart} from 'lucide-react'
 import {useState} from 'react'
+import { Link } from 'react-router'
 
 function Navbar({refreshCart}) {
   const [cartItems,setCartItems]=useState([]);
@@ -16,10 +17,10 @@ useEffect(() => {
       <Salad className='mr-2 ' size={40}/>
       <h2 className='text-2xl font-bold'>VeggieHub</h2>
 
-    <div className='ml-auto relative '>
+    <Link to="/MyCart" className='ml-auto relative '>
     <span className='absolute top-[-13px] right-1  font-bold'>{cartItems.length}</span>
     <ShoppingCart className='ml-auto ' size={35}/>
-    </div>
+    </Link>
     </div>
   )
 }

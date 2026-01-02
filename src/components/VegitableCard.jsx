@@ -34,7 +34,7 @@ function VegitableCard({id,name,price,image,description,unit,category,addToCart}
             
         </div>
 
-        <Button title="Add to Cart" variant="primary" size="small" onClick={() => addToCart({id, name, price, unit, quantity, totalAmount: price * quantity})}/>
+        <Button title="Add to Cart" variant="primary" size="small" onClick={() => addToCart({id, name, price, unit, quantity,description,imageUrl:image, totalAmount: price * quantity})}/>
 
        <Toaster />
     </div>
