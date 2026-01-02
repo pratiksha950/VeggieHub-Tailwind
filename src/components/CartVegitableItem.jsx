@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './btn'
 
 function CartVegitableItem({
     name,
@@ -19,10 +20,10 @@ function CartVegitableItem({
         <p>Price: ₹ {price} per Unit</p>
         <p>Quantity: {quantity}</p>
         <p className=' font-bold'>Total: ₹ {price * quantity}</p>
+
+       <Button title="Remove from Cart" variant="forth" size="small"/>
        
         </div>
-
-
     </div>
   )
 }

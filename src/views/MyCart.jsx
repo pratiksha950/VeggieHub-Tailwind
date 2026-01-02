@@ -7,6 +7,7 @@ import CartVegitableItem from '../components/CartVegitableItem';
 
 function MyCart() {
   const [cartItems,setCartItems]=useState([]);
+  const [totalAmount,setTotalAmount]=useState(0);
 
   useEffect(()=>{
     const existingCart =
@@ -14,9 +15,21 @@ function MyCart() {
     setCartItems(existingCart);
   },[])
 
+  useEffect(()=>{
+    let total=0;
+
+    cartItems.map((item)=>{
+      total+=item.price*item.quantity;
+    })
+    setTotalAmount(total)
+  },[cartItems])
+
   return (
-    <div>
+    <div className='bg-green-200 min-h-screen '>
       <Navbar />
+      <h3 className='text-center font-bold text-2xl  bg-green-300 p-4'>
+        Total Amount: ₹ {totalAmount}
+      </h3>
 
 
     <div className='min-h-screen flex flex-row flex-wrap gap-4 justify-center bg-green-200 p-4 '>

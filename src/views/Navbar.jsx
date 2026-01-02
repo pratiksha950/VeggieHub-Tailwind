@@ -14,8 +14,10 @@ useEffect(() => {
 
   return (
     <div className='sticky top-0 w-full bg-green-500 h-20 flex items-center px-4'>
+      <Link to="/" className='flex items-center gap-2'>
       <Salad className='mr-2 ' size={40}/>
       <h2 className='text-2xl font-bold'>VeggieHub</h2>
+      </Link>
 
     <Link to="/MyCart" className='ml-auto relative '>
     <span className='absolute top-[-13px] right-1  font-bold'>{cartItems.length}</span>

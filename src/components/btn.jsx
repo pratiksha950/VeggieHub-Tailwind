@@ -3,7 +3,8 @@ import React from 'react'
 const buttton_Varients={
     primary:"bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded cursor-pointer mt-4",
     secondary:"bg-white hover:bg-gray-200 text-green-700 font-bold py-2 px-4 cursor-pointer mt-4 border border-green-500 rounded-2xl",
-    tertiary:"bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded cursor-pointer mt-4"
+    tertiary:"bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded cursor-pointer mt-4",
+    forth:"bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded cursor-pointer mt-4"
 
 }
 
