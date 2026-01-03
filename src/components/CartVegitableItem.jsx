@@ -2,9 +2,10 @@ import React from 'react'
 import Button from './btn'
 
 const removeFromCart=(id)=>{
- console.log(`  Remove from cart : ${id}`);
+ 
  const cartItems=JSON.parse(localStorage.getItem("cartItems")) || [];
  const updatedCartItems=cartItems.filter(item=>item.id !== id);
+
  localStorage.setItem("cartItems",JSON.stringify(updatedCartItems));
   window.location.reload();
 }
@@ -13,7 +14,7 @@ function CartVegitableItem({
   id,
     name,
     price,
-    quantity,
+    quantity, 
     imageUrl,
 
 }) {
